@@ -16,3 +16,47 @@
     font-size: 70px;
     /* margin: 0; */
 }
+
+/* gallery-layout */
+.gallery-conatainer{
+    background: url('./img/cork.png');
+    padding: 40px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-card{
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+.photo-card .photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pin{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30px;
+}
+
+.photo-description{
+    font-size: 16px;
+    color: rgb(142, 139, 139);
+    margin-top: 10px;
+}
+

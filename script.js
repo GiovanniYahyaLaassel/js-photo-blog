@@ -42,4 +42,27 @@ axios
             // Inserisco la card nella galleria
             galleryContainer.appendChild(photoCard);
         });
-    })
+    });
+
+//  selezioni gli elementi dell'overlay
+const overlay = document.getElementById('overlay');
+const closeOveralyButton = document.getElementById('close-overlay');
+
+// creo la funzione per aprire l'overlay
+function openOverlay() {
+    overlay.classList.add('visible');
+}
+
+function closeOverlay() {
+    overlay.classList.remove('visible');
+}
+// console.log(overlay, closeOveralyButton)
+
+// aggiungo l'evento al pulsante di chiusura
+closeOveralyButton.addEventListener('click', overlay);
+
+overlay.addEventListener('click',(element) => {
+    if (element.target === overlay){
+        closeOverlay();
+    } 
+});

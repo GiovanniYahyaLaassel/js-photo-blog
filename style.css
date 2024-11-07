@@ -31,26 +31,31 @@ body {
 }
 
 .gallery{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne uguali */
 }
 
 .photo-card{
+    flex-basis: 200px;
+    flex-grow: 1;
     text-align: center;
     position: relative;
     padding: 20px;
     border: 5px solid #fff;
-    width: 200px;
     background-color: #fff;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
 .photo-card .photo {
     width: 100%;
-    height: 200px;
+    height: auto;
+    /* max-height: 200px; */
     border-radius: 5px;
     object-fit: cover;
 }
@@ -68,4 +73,6 @@ body {
     color: rgb(142, 139, 139);
     margin-top: 10px;
 }
+
+
 

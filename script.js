@@ -16,14 +16,14 @@ axios
             const photoTitle = photo.title;
 
             // aggiungo l'lelemento photo card con l'api
-            const photoCard = document.createElement('figure');
+            const photoCard = document.createElement('div');
             photoCard.classList.add('photo-card');
 
             // creo la foto
             const img = document.createElement('img');
             img.src = photoUrl ;
             img.alt = photoTitle;
-            img.classList.add = ('photo');
+            img.classList.add('photo');
             photoCard.appendChild(img);
            
             // aggiungo lo spillo
@@ -34,7 +34,7 @@ axios
             photoCard.appendChild(pin);
 
             // Aggiungo la descrizione
-            const photoDescription = document.createElement('figcaption');
+            const photoDescription = document.createElement('div');
             photoDescription.classList.add('photo-description');
             photoDescription.textContent = photoTitle;
             photoCard.appendChild(photoDescription);

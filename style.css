@@ -33,8 +33,7 @@ body {
 .gallery{
     max-width: 1000px;
     margin: 0 auto;
-
-    gap: 15px;
+    gap: 30px 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonne uguali */
 }
@@ -74,5 +73,26 @@ body {
     margin-top: 10px;
 }
 
+/* design tablet */
+@media (max-width:768px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    
+    .header h1 {
+        font-size: 50px;
+    }
 
+}
 
+/* design mobile */
+@media (max-width:480px) {
+    .gallery{
+        grid-template-columns: 1fr;  
+    }
+    
+    .header h1 {
+        font-size: 35px;
+    }
+
+}
